@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Libros - El Túnel</title>
+
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- CSS INTERNO -->
+    <style>
+
+        .titulo-catalogo {
+            color: #800020;
+            text-align: center;
+            font-size: 2em;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <div class="header-top">
+
+            <h1 class="nombre-libreria">El Túnel</h1>
+
+            <div class="right-container">
+
+                <!-- BUSCADOR -->
+                <div class="search-container">
+
+                    <i class="fas fa-search"></i>
+
+                    <input type="text"
+                           placeholder="Buscar"
+                           id="search-bar">
+
+                </div>
+
+
+                <!-- ICONOS -->
+                <div class="icons-container">
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/user.png"
+                             title="Usuario"
+                             alt="Usuario">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/like.png"
+                             title="Favoritos"
+                             alt="Favoritos">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/shopping-bag.png"
+                             title="Compras"
+                             alt="Compras">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <div class="nav-container">
+
+            <nav>
+
+                <ul class="navegacion">
+
+                    <li>
+                        <a href="Proyecto_Final.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="libros.html">Libros</a>
+                    </li>
+
+                    <li>
+                        <a href="conocenos.html">Conócenos</a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main>
+
+        <h2 class="titulo-catalogo">
+            Catálogo de Libros
+        </h2>
+
+
+        <!-- TABLA DEL CATÁLOGO -->
+        <table>
+
+            <tr>
+
+                <th>Imagen</th>
+                <th>Libro</th>
+                <th>Autor</th>
+                <th>Precio</th>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    <img src="img/libro_5.jpeg"
+                         alt="Fuerte es el Silencio">
+                </td>
+
+                <td>
+                    Fuerte es el Silencio
+                </td>
+
+                <td>
+                    Elena Poniatowska
+                </td>
+
+                <!-- CSS inline requerido por la rúbrica -->
+                <td style="background-color: #ffa07a;">
+                    $450
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    <img src="img/libro_6.jpeg"
+                         alt="Rayuela">
+                </td>
+
+                <td>
+                    Rayuela
+                </td>
+
+                <td>
+                    Julio Cortazar
+                </td>
+
+                <td>
+                    $445
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    <img src="img/libro_7.jpeg"
+                         alt="La ley de Herodes">
+                </td>
+
+                <td>
+                    La ley de Herodes
+                </td>
+
+                <td>
+                    Jorge Ibargüngoitia
+                </td>
+
+                <td>
+                    $150
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    <img src="img/libro_8.jpeg"
+                         alt="Arráncame la Vida">
+                </td>
+
+                <td>
+                    Arráncame la Vida
+                </td>
+
+                <td>
+                    Angeles Mastretta
+                </td>
+
+                <td>
+                    $350
+                </td>
+
+            </tr>
+
+        </table>
+
+
+        <!-- VIDEO PROMOCIONAL -->
+        <section class="video-promocional">
+
+            <h2>
+                Vive la experiencia de El Túnel
+            </h2>
+
+            <p>
+                Descubre un espacio donde los libros, el café y la cultura
+                se encuentran. Recorre nuestra librería y conoce el ambiente
+                que hace de El Túnel un lugar ideal para disfrutar de la lectura.
+            </p>
+
+            <video controls>
+                <source src="img/video_libreria.mp4"
+                        type="video/mp4">
+                Tu navegador no puede reproducir este video.
+            </video>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+    </footer>
+
+</body>
+
+</html>

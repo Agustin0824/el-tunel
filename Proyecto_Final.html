@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proyecto Final</title>
+
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- AUDIO DE FONDO -->
+    <audio id="musicaFondo" autoplay>
+        <source src="jazz1.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <div class="header-top">
+
+            <h1 class="nombre-libreria">El Túnel</h1>
+
+            <div class="right-container">
+
+                <!-- BUSCADOR -->
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+
+                    <input type="text"
+                           placeholder="Buscar"
+                           id="search-bar">
+                </div>
+
+                <!-- ICONOS -->
+                <div class="icons-container">
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/user.png"
+                             title="Usuario"
+                             alt="Usuario">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/like.png"
+                             title="Favoritos"
+                             alt="Favoritos">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/shopping-bag.png"
+                             title="Compras"
+                             alt="Compras">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <div class="nav-container">
+
+            <nav>
+                <ul class="navegacion">
+
+                    <li>
+                        <a href="Proyecto_Final.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="libros.html">Libros</a>
+                    </li>
+
+                    <li>
+                        <a href="conocenos.html">Conócenos</a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- PORTADA -->
+        <section class="portada">
+
+            <img src="img/portada.jpg"
+                 alt="Imagen de portada">
+
+            <div class="texto-portada">
+
+                <p class="linea-uno">
+                    ... Creando nuevos mundos, historias
+                </p>
+
+                <p class="linea-dos">
+                    y recuerdos
+                </p>
+
+                <p class="cita">
+                    "Vivir consiste en construir futuros recuerdos"
+                </p>
+
+                <a href="#recomendaciones" class="boton-portada">
+                    Ver recomendaciones
+                </a>
+
+                <a href="Catalogo.docx" class="boton-portada">
+                    Ver catálogo
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARRUSEL -->
+        <section class="carrusel">
+
+            <div class="carrusel-imagenes">
+
+                <img src="img/carrusel1.jpg"
+                     alt="Librería y cafetería">
+
+                <img src="img/carrusel2.jpg"
+                     alt="Libros y café">
+
+                <img src="img/carrusel3.jpg"
+                     alt="Estantería de libros">
+
+            </div>
+
+        </section>
+
+
+        <!-- RECOMENDACIONES -->
+        <section class="recomendaciones" id="recomendaciones">
+
+            <p>
+                <strong>Recomendaciones</strong>
+            </p>
+
+            <div class="libros-container">
+
+                <div class="libro">
+
+                    <img src="img/libro_1.jpeg"
+                         alt="Harry Potter y la Piedra Filosofal">
+
+                    <p class="titulo-libro">
+                        Harry Potter y la Piedra Filosofal
+                    </p>
+
+                    <p class="autor-libro">
+                        J.K. Rowling
+                    </p>
+
+                    <button class="ver-mas">
+                        Ver más
+                    </button>
+
+                </div>
+
+
+                <div class="libro">
+
+                    <img src="img/libro_2.jpeg"
+                         alt="Cien Años de Soledad">
+
+                    <p class="titulo-libro">
+                        Cien Años de Soledad
+                    </p>
+
+                    <p class="autor-libro">
+                        Gabriel Garcia Marquez
+                    </p>
+
+                    <button class="ver-mas">
+                        Ver más
+                    </button>
+
+                </div>
+
+
+                <div class="libro">
+
+                    <img src="img/libro_3.jpeg"
+                         alt="La Insoportable levedad del Ser">
+
+                    <p class="titulo-libro">
+                        La Insoportable levedad del Ser
+                    </p>
+
+                    <p class="autor-libro">
+                        Millan Kundera
+                    </p>
+
+                    <button class="ver-mas">
+                        Ver más
+                    </button>
+
+                </div>
+
+
+                <div class="libro">
+
+                    <img src="img/libro_4.jpeg"
+                         alt="Como agua para Chocolate">
+
+                    <p class="titulo-libro">
+                        Como agua para Chocolate
+                    </p>
+
+                    <p class="autor-libro">
+                        Laura Esquivel
+                    </p>
+
+                    <button class="ver-mas">
+                        Ver más
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATÁLOGO DE LIBROS -->
+        <article>
+
+            <div class="seccion-libros">
+                <p>
+                    <strong>Libros</strong>
+                </p>
+            </div>
+
+            <div class="libros-scroll-container">
+
+                <div class="libro">
+
+                    <img src="img/libro_5.jpeg"
+                         alt="Fuerte es el Silencio">
+
+                    <p class="titulo-libro">
+                        Fuerte es el Silencio
+                    </p>
+
+                    <p class="autor-libro">
+                        Elena Poniatowska
+                    </p>
+
+                    <p class="precio">
+                        $450
+                    </p>
+
+                    <button class="comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+
+                <div class="libro">
+
+                    <img src="img/libro_6.jpeg"
+                         alt="Rayuela">
+
+                    <p class="titulo-libro">
+                        Rayuela
+                    </p>
+
+                    <p class="autor-libro">
+                        Julio Cortazar
+                    </p>
+
+                    <p class="precio">
+                        $445
+                    </p>
+
+                    <button class="comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+
+                <div class="libro">
+
+                    <img src="img/libro_7.jpeg"
+                         alt="La ley de Herodes">
+
+                    <p class="titulo-libro">
+                        La ley de Herodes
+                    </p>
+
+                    <p class="autor-libro">
+                        Jorge Ibargüngoitia
+                    </p>
+
+                    <p class="precio">
+                        $150
+                    </p>
+
+                    <button class="comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+
+                <div class="libro">
+
+                    <img src="img/libro_8.jpeg"
+                         alt="Arráncame la Vida">
+
+                    <p class="titulo-libro">
+                        Arráncame la Vida
+                    </p>
+
+                    <p class="autor-libro">
+                        Angeles Mastretta
+                    </p>
+
+                    <p class="precio">
+                        $350
+                    </p>
+
+                    <button class="comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+
+                <div class="libro">
+
+                    <img src="img/libro_9.jpeg"
+                         alt="El llano en Llamas">
+
+                    <p class="titulo-libro">
+                        El llano en Llamas
+                    </p>
+
+                    <p class="autor-libro">
+                        Juan Rulfo
+                    </p>
+
+                    <p class="precio">
+                        $190
+                    </p>
+
+                    <button class="comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+
+                <div class="libro">
+
+                    <img src="img/libro_10.jpeg"
+                         alt="Donde habitan los Angeles">
+
+                    <p class="titulo-libro">
+                        Donde habitan los Angeles
+                    </p>
+
+                    <p class="autor-libro">
+                        Claudia Celis
+                    </p>
+
+                    <p class="precio">
+                        $230
+                    </p>
+
+                    <button class="comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+
+                <div class="libro">
+
+                    <img src="img/libro_11.jpeg"
+                         alt="Orgullo y Prejuicio">
+
+                    <p class="titulo-libro">
+                        Orgullo y Prejuicio
+                    </p>
+
+                    <p class="autor-libro">
+                        Jane Austen
+                    </p>
+
+                    <p class="precio">
+                        $300
+                    </p>
+
+                    <button class="comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- INFORMACIÓN SOBRE EL TÚNEL -->
+        <aside class="seccion-conocenos">
+
+            <p>
+                <strong>Conócenos</strong>
+            </p>
+
+            <div class="conocenos-content">
+
+                <div class="conocenos-texto">
+
+                    <p>
+                        El Túnel es una cafetería ideal para los amantes
+                        de la literatura.
+                    </p>
+
+                    <p>
+                        Además de su servicio de venta de libros y productos
+                        en línea puedes visitar nuestra sucursal y acompañar
+                        tu lectura con una taza de café o bebida de tu elección,
+                        o bien, disfrutar de los diversos eventos culturales
+                        que tenemos para ti.
+                    </p>
+
+                    <br>
+
+                    <!-- CSS inline requerido por la rúbrica -->
+                    <p style="text-align: center;">
+                        <span style="color: #800020;">
+                            <strong>¡Te esperamos!</strong>
+                        </span>
+                    </p>
+
+                </div>
+
+
+                <div class="libreria-img-container">
+
+                    <img src="img/libreria.jpg"
+                         alt="Imagen de la librería"
+                         class="libreria-img">
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <div class="footer-content">
+
+            <!-- INFORMACIÓN DE EL TÚNEL -->
+            <div class="footer-section">
+
+                <strong>
+                    <span class="highlighted-text">
+                        El Túnel
+                    </span>
+                </strong>
+
+                <p class="footer-description">
+                    Un espacio para los amantes de la literatura.
+                    Encuentra la mejor selección de libros, accesorios
+                    y un acogedor espacio en la CDMX para leer y tomar
+                    un café con tu libro favorito.
+                </p>
+
+                <p>
+                    <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/marker.png"
+                         alt="Icono de ubicación">
+
+                    <a href="https://maps.app.goo.gl/PB6MczTazqkZk5yy7"
+                       target="_blank">
+                        Av. Álvaro Obregón 90, Roma Nte, Cuauhtémoc,
+                        06700 Ciudad de México, CDMX
+                    </a>
+                </p>
+
+                <p>
+                    <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/phone.png"
+                         alt="Icono de teléfono">
+
+                    56 98 07 99 87
+                </p>
+
+                <p>
+                    <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/email.png"
+                         alt="Icono de email">
+
+                    eltunel.libros@gmail.com
+                </p>
+
+
+                <!-- REDES SOCIALES -->
+                <div class="social-icons">
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook.png"
+                             alt="Facebook">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter.png"
+                             alt="Twitter">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png"
+                             alt="Instagram">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/youtube-play.png"
+                             alt="YouTube">
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFORMACIÓN -->
+            <div class="footer-section">
+
+                <strong>
+                    <span class="highlighted-text">
+                        Información
+                    </span>
+                </strong>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Acerca de El Túnel</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Tarjeta de cliente frecuente</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Ventas por mayoreo</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Facturación</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contáctanos</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Aviso de privacidad</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Términos y condiciones</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SUSCRIPCIÓN -->
+            <div class="footer-section">
+
+                <strong>
+                    <span class="highlighted-text">
+                        Suscríbete
+                    </span>
+                </strong>
+
+                <p>
+                    Regístrate para recibir noticias de promociones,
+                    eventos y actualizaciones.
+                </p>
+
+                <form>
+
+                    <input type="email"
+                           placeholder="Ingresa tu correo"
+                           required>
+
+                    <button type="submit">
+                        Suscribirse
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTADOR DE VISITAS -->
+        <p id="contador-visitas">
+            Visitas: 0
+        </p>
+
+
+        <!-- DERECHOS -->
+        <p class="copyright">
+            &copy; 2023 El Túnel.
+            Todos los derechos reservados.
+            Diseñado
+            <strong>
+                por Luis Angel Agustin Dolores
+            </strong>
+        </p>
+
+    </footer>
+
+
+    <!-- SCRIPT DEL CONTADOR -->
+    <script>
+
+        let visitas = localStorage.getItem("visitas");
+
+        if (visitas === null) {
+            visitas = 1;
+        } else {
+            visitas = Number(visitas) + 1;
+        }
+
+        localStorage.setItem("visitas", visitas);
+
+        document.getElementById("contador-visitas").textContent =
+            "Visitas: " + visitas;
+
+    </script>
+
+
+    <!-- SCRIPT DEL AUDIO -->
+    <script>
+
+        const audio = document.getElementById("musicaFondo");
+
+        window.addEventListener("load", function () {
+            audio.play();
+        });
+
+    </script>
+
+</body>
+
+</html>

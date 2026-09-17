@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto - El Túnel</title>
+
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <div class="header-top">
+
+            <h1 class="nombre-libreria">El Túnel</h1>
+
+            <div class="right-container">
+
+                <!-- BUSCADOR -->
+                <div class="search-container">
+
+                    <i class="fas fa-search"></i>
+
+                    <input type="text"
+                           placeholder="Buscar"
+                           id="search-bar">
+
+                </div>
+
+
+                <!-- ICONOS -->
+                <div class="icons-container">
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/user.png"
+                             title="Usuario"
+                             alt="Usuario">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/like.png"
+                             title="Favoritos"
+                             alt="Favoritos">
+                    </a>
+
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/shopping-bag.png"
+                             title="Compras"
+                             alt="Compras">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <div class="nav-container">
+
+            <nav>
+
+                <ul class="navegacion">
+
+                    <li>
+                        <a href="Proyecto_Final.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="libros.html">Libros</a>
+                    </li>
+
+                    <li>
+                        <a href="conocenos.html">Conócenos</a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main>
+
+        <h2>Contáctanos</h2>
+
+        <p>
+            ¿Tienes alguna pregunta, comentario o deseas conocer más sobre
+            nuestros libros? Envíanos un mensaje y con gusto te atenderemos.
+        </p>
+
+        <p>
+            Completa los siguientes campos para ponerte en contacto con
+            El Túnel.
+        </p>
+
+
+        <!-- FORMULARIO -->
+        <form id="formulario-contacto">
+
+            <label for="nombre">
+                Nombre:
+            </label>
+
+            <input type="text"
+                   id="nombre"
+                   name="nombre">
+
+
+            <label for="correo">
+                Correo electrónico:
+            </label>
+
+            <input type="email"
+                   id="correo"
+                   name="correo">
+
+
+            <label for="asunto">
+                Asunto:
+            </label>
+
+            <input type="text"
+                   id="asunto"
+                   name="asunto">
+
+
+            <label for="mensaje">
+                Mensaje:
+            </label>
+
+            <textarea id="mensaje"
+                      name="mensaje"
+                      rows="5"></textarea>
+
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+    </footer>
+
+
+    <!-- VALIDACIÓN DEL FORMULARIO -->
+    <script>
+
+        const formulario = document.getElementById("formulario-contacto");
+
+        formulario.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            if (
+                document.getElementById("nombre").value === "" ||
+                document.getElementById("correo").value === "" ||
+                document.getElementById("asunto").value === "" ||
+                document.getElementById("mensaje").value === ""
+            ) {
+                alert("Por favor, completa todos los campos.");
+
+            } else {
+
+                alert("Formulario completado correctamente.");
+                formulario.reset();
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
